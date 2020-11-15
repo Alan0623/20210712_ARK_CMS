@@ -639,7 +639,8 @@
   /* 讓 li 往下移來遮住 ul 的部份 border-bottom */
   border-left: none;
 }
-/* line 412, ../sass/page.scss */
+/* line 411, ../sass/page.scss */
+.abgne_tab ul.tabs li button,
 .abgne_tab ul.tabs li a {
   display: block;
   padding: 0 36px;
@@ -650,14 +651,17 @@
   font-weight: 700;
 }
 /* line 420, ../sass/page.scss */
-.abgne_tab ul.tabs li a:hover, .abgne_tab ul.tabs li a:focus {
+.abgne_tab ul.tabs li button:hover, .abgne_tab ul.tabs li button:focus,
+.abgne_tab ul.tabs li a:hover,
+.abgne_tab ul.tabs li a:focus {
   background: #FFF;
 }
 /* line 424, ../sass/page.scss */
 .abgne_tab ul.tabs li.active {
   border-bottom: 2px solid #2D343B;
 }
-/* line 427, ../sass/page.scss */
+/* line 426, ../sass/page.scss */
+.abgne_tab ul.tabs li.active button,
 .abgne_tab ul.tabs li.active a {
   color: #0E1216;
 }
@@ -988,26 +992,29 @@
   min-width: auto;
 }
 /* line 740, ../sass/page.scss */
+.main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li button,
 .main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li a {
   color: #93A4BD;
   text-decoration: underline;
 }
-/* line 744, ../sass/page.scss */
-.main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li a:hover, .main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li a:focus {
+/* line 745, ../sass/page.scss */
+.main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li button:hover, .main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li button:focus,
+.main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li a:hover,
+.main_content_orderInfo .orderInfo_content .orderInfo_product_functions .functions li a:focus {
   color: #2D343B;
 }
 
 /*------------------------------------------------------------------
 客戶資料
 ------------------------------------------------------------------*/
-/* line 759, ../sass/page.scss */
+/* line 760, ../sass/page.scss */
 .staff_updata {
   width: 80%;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 32px;
 }
-/* line 765, ../sass/page.scss */
+/* line 766, ../sass/page.scss */
 .staff_updata .staff_updata_img {
   float: left;
   width: 120px;
@@ -1015,50 +1022,52 @@
   border-radius: 50%;
   overflow: hidden;
 }
-/* line 771, ../sass/page.scss */
+/* line 772, ../sass/page.scss */
 .staff_updata .staff_updata_img img {
   width: 120px;
   border-radius: 50%;
 }
-/* line 776, ../sass/page.scss */
+/* line 777, ../sass/page.scss */
 .staff_updata ul {
   display: inline-block;
   padding-top: 20px;
   padding-left: 24px;
 }
-/* line 780, ../sass/page.scss */
+/* line 781, ../sass/page.scss */
 .staff_updata ul li {
   display: block;
 }
-/* line 782, ../sass/page.scss */
+/* line 783, ../sass/page.scss */
 .staff_updata ul li.input-send {
   margin: 0;
   padding-bottom: 8px;
   display: inline-block;
 }
-/* line 787, ../sass/page.scss */
-.staff_updata ul li.input-send a:hover, .staff_updata ul li.input-send a:focus {
+/* line 789, ../sass/page.scss */
+.staff_updata ul li.input-send button:hover, .staff_updata ul li.input-send button:focus,
+.staff_updata ul li.input-send a:hover,
+.staff_updata ul li.input-send a:focus {
   background-color: #2D343B;
   color: #FFF;
 }
-/* line 795, ../sass/page.scss */
+/* line 797, ../sass/page.scss */
 .staff_updata .input-send a:nth-last-child(1) {
   float: left;
   letter-spacing: 1px;
 }
 
-/* line 800, ../sass/page.scss */
+/* line 802, ../sass/page.scss */
 .staff_form {
   width: 80%;
   margin: 0 auto;
   clear: both;
 }
-/* line 806, ../sass/page.scss */
+/* line 808, ../sass/page.scss */
 .staff_form ul li {
   border-bottom: #eee dashed 1px;
   padding: 20px 0 0 0;
 }
-/* line 810, ../sass/page.scss */
+/* line 812, ../sass/page.scss */
 .staff_form ul li.input-send {
   display: inline-block;
   margin-top: 0;
@@ -1066,54 +1075,65 @@
   width: 100%;
   margin-bottom: 40px;
 }
-/* line 816, ../sass/page.scss */
+/* line 818, ../sass/page.scss */
 .staff_form ul li.input-send .btn {
   float: initial;
   margin: 0 auto;
 }
-/* line 820, ../sass/page.scss */
+/* line 822, ../sass/page.scss */
+.staff_form ul li.input-send button,
 .staff_form ul li.input-send a {
   display: inline-block;
   float: inherit !important;
   line-height: 44px;
   margin: 0 16px;
 }
-/* line 824, ../sass/page.scss */
-.staff_form ul li.input-send a:hover, .staff_form ul li.input-send a:focus {
+/* line 827, ../sass/page.scss */
+.staff_form ul li.input-send button:hover, .staff_form ul li.input-send button:focus,
+.staff_form ul li.input-send a:hover,
+.staff_form ul li.input-send a:focus {
   background-color: #2D343B;
   color: #FFF;
 }
-/* line 832, ../sass/page.scss */
+/* line 835, ../sass/page.scss */
 .staff_form ul li.facebook .title, .staff_form ul li.google .title {
   background-image: url("../images/icon/icon_google.svg");
   background-position: center right;
   background-repeat: no-repeat;
   float: left;
 }
-/* line 839, ../sass/page.scss */
+/* line 842, ../sass/page.scss */
 .staff_form ul li.facebook p, .staff_form ul li.google p {
   line-height: 44px;
   height: 44px;
   display: inline-block;
 }
-/* line 844, ../sass/page.scss */
-.staff_form ul li.facebook a, .staff_form ul li.google a {
+/* line 847, ../sass/page.scss */
+.staff_form ul li.facebook button,
+.staff_form ul li.facebook a, .staff_form ul li.google button,
+.staff_form ul li.google a {
   text-decoration: underline;
   margin-left: 40px;
   color: #6F8098;
   line-height: 44px;
   height: 44px;
   display: inline-block;
+  background-color: transparent;
+  border: none;
 }
-/* line 851, ../sass/page.scss */
-.staff_form ul li.facebook a:hover, .staff_form ul li.facebook a:focus, .staff_form ul li.google a:hover, .staff_form ul li.google a:focus {
+/* line 857, ../sass/page.scss */
+.staff_form ul li.facebook button:hover, .staff_form ul li.facebook button:focus,
+.staff_form ul li.facebook a:hover,
+.staff_form ul li.facebook a:focus, .staff_form ul li.google button:hover, .staff_form ul li.google button:focus,
+.staff_form ul li.google a:hover,
+.staff_form ul li.google a:focus {
   color: #2D343B;
 }
-/* line 858, ../sass/page.scss */
+/* line 864, ../sass/page.scss */
 .staff_form ul li.facebook .title {
   background-image: url("../images/icon/icon_facebook.svg");
 }
-/* line 866, ../sass/page.scss */
+/* line 872, ../sass/page.scss */
 .staff_form .title {
   text-align: right;
   width: 108px;
@@ -1121,11 +1141,11 @@
   height: 44px;
   margin-right: 8px;
 }
-/* line 876, ../sass/page.scss */
+/* line 882, ../sass/page.scss */
 .staff_form label {
   position: relative;
 }
-/* line 878, ../sass/page.scss */
+/* line 884, ../sass/page.scss */
 .staff_form label span {
   box-sizing: border-box;
   border: #DBE3EF solid 1px;
@@ -1136,30 +1156,31 @@
   border-radius: 8px;
   display: none;
 }
-/* line 890, ../sass/page.scss */
+/* line 896, ../sass/page.scss */
 .staff_form input[type="tel"], .staff_form input[type="email"], .staff_form input[type="password"], .staff_form input[type="text"] {
   width: 400px;
 }
-/* line 893, ../sass/page.scss */
+/* line 899, ../sass/page.scss */
+.staff_form .input-send button:nth-last-child(1),
 .staff_form .input-send a:nth-last-child(1) {
   float: left;
   letter-spacing: 1px;
 }
-/* line 898, ../sass/page.scss */
+/* line 905, ../sass/page.scss */
 .staff_form .info_text {
   margin-bottom: 20px;
   padding: 20px;
   background-color: #F3F6FA;
   border-radius: 8px;
 }
-/* line 903, ../sass/page.scss */
+/* line 910, ../sass/page.scss */
 .staff_form .info_text li {
   line-height: 24px;
   height: 24px;
   padding: 0;
 }
 
-/* line 912, ../sass/page.scss */
+/* line 919, ../sass/page.scss */
 .container {
   width: 100%;
   height: 100%;
@@ -1169,7 +1190,7 @@
   align-items: center;
 }
 
-/* line 921, ../sass/page.scss */
+/* line 928, ../sass/page.scss */
 .control-group {
   display: inline-block;
   vertical-align: top;
@@ -1182,7 +1203,7 @@
   margin: 10px;
 }
 
-/* line 932, ../sass/page.scss */
+/* line 939, ../sass/page.scss */
 .control {
   position: relative;
   padding-left: 30px;
@@ -1192,14 +1213,14 @@
   display: inline-block;
 }
 
-/* line 941, ../sass/page.scss */
+/* line 948, ../sass/page.scss */
 .control input {
   position: absolute;
   z-index: -1;
   opacity: 0;
 }
 
-/* line 946, ../sass/page.scss */
+/* line 953, ../sass/page.scss */
 .control__indicator {
   position: absolute;
   top: -2px;
@@ -1212,53 +1233,53 @@
   outline-color: #C3D1E4;
 }
 
-/* line 958, ../sass/page.scss */
+/* line 965, ../sass/page.scss */
 .control--radio .control__indicator {
   border-radius: 50%;
 }
 
-/* line 961, ../sass/page.scss */
+/* line 968, ../sass/page.scss */
 .control:hover input ~ .control__indicator,
 .control input:focus ~ .control__indicator {
   background: #ccc;
 }
 
-/* line 965, ../sass/page.scss */
+/* line 972, ../sass/page.scss */
 .control input.checked, .control__indicator.checked {
   background: #2aa1c0;
 }
 
-/* line 968, ../sass/page.scss */
+/* line 975, ../sass/page.scss */
 .control input:checked ~ .control__indicator {
   background: #2aa1c0;
 }
 
-/* line 971, ../sass/page.scss */
+/* line 978, ../sass/page.scss */
 .control:hover input:not([disabled]):checked ~ .control__indicator,
 .control input:checked:focus ~ .control__indicator {
   background: #0e647d;
 }
 
-/* line 975, ../sass/page.scss */
+/* line 982, ../sass/page.scss */
 .control input:disabled ~ .control__indicator {
   background: #e6e6e6;
   opacity: 0.6;
   pointer-events: none;
 }
 
-/* line 980, ../sass/page.scss */
+/* line 987, ../sass/page.scss */
 .control__indicator:after {
   content: '';
   position: absolute;
   display: none;
 }
 
-/* line 985, ../sass/page.scss */
+/* line 992, ../sass/page.scss */
 .control input:checked ~ .control__indicator:after {
   display: block;
 }
 
-/* line 988, ../sass/page.scss */
+/* line 995, ../sass/page.scss */
 .control--checkbox .control__indicator.checked:after,
 .control--checkbox .control__indicator:after {
   left: 8px;
@@ -1270,12 +1291,12 @@
   transform: rotate(45deg);
 }
 
-/* line 998, ../sass/page.scss */
+/* line 1005, ../sass/page.scss */
 .control--checkbox input:disabled ~ .control__indicator:after {
   border-color: #7b7b7b;
 }
 
-/* line 1001, ../sass/page.scss */
+/* line 1008, ../sass/page.scss */
 .control--radio .control__indicator.checked:after,
 .control--radio .control__indicator:after {
   left: 7px;
@@ -1286,12 +1307,12 @@
   background: #fff;
 }
 
-/* line 1010, ../sass/page.scss */
+/* line 1017, ../sass/page.scss */
 .control--radio input:disabled ~ .control__indicator:after {
   background: #7b7b7b;
 }
 
-/* line 1013, ../sass/page.scss */
+/* line 1020, ../sass/page.scss */
 .select {
   position: relative;
   display: inline-block;
@@ -1299,7 +1320,7 @@
   width: 100%;
 }
 
-/* line 1019, ../sass/page.scss */
+/* line 1026, ../sass/page.scss */
 .select select {
   display: inline-block;
   width: 100%;
@@ -1315,25 +1336,25 @@
   -moz-appearance: none;
 }
 
-/* line 1033, ../sass/page.scss */
+/* line 1040, ../sass/page.scss */
 .select select::-ms-expand {
   display: none;
 }
 
-/* line 1036, ../sass/page.scss */
+/* line 1043, ../sass/page.scss */
 .select select:hover,
 .select select:focus {
   color: #000;
   background: #ccc;
 }
 
-/* line 1041, ../sass/page.scss */
+/* line 1048, ../sass/page.scss */
 .select select:disabled {
   opacity: 0.5;
   pointer-events: none;
 }
 
-/* line 1045, ../sass/page.scss */
+/* line 1052, ../sass/page.scss */
 .select__arrow {
   position: absolute;
   top: 16px;
@@ -1346,13 +1367,13 @@
   border-color: #7b7b7b transparent transparent transparent;
 }
 
-/* line 1056, ../sass/page.scss */
+/* line 1063, ../sass/page.scss */
 .select select:hover ~ .select__arrow,
 .select select:focus ~ .select__arrow {
   border-top-color: #000;
 }
 
-/* line 1060, ../sass/page.scss */
+/* line 1067, ../sass/page.scss */
 .select select:disabled ~ .select__arrow {
   border-top-color: #ccc;
 }
@@ -1360,7 +1381,7 @@
 /*------------------------------------------------------------------
 商品管理
 ------------------------------------------------------------------*/
-/* line 1067, ../sass/page.scss */
+/* line 1074, ../sass/page.scss */
 .product_management_table {
   background-color: #fff;
   width: 100%;
@@ -1369,89 +1390,89 @@
   background-color: white;
   box-shadow: rgba(147, 164, 189, 0.4) 0 2px 4px, rgba(188, 188, 188, 0.4) 0 2px 4px;
 }
-/* line 1076, ../sass/page.scss */
+/* line 1083, ../sass/page.scss */
 .product_management_table thead {
   background-color: #FFF;
   line-height: 44px;
   height: 44px;
   color: #6F8098;
 }
-/* line 1081, ../sass/page.scss */
+/* line 1088, ../sass/page.scss */
 .product_management_table thead tr {
   border-bottom: #DBE3EF solid 1px;
 }
-/* line 1083, ../sass/page.scss */
+/* line 1090, ../sass/page.scss */
 .product_management_table thead tr th {
   text-align: left;
   color: #6F8098;
   height: 69px;
   line-height: 69px;
 }
-/* line 1088, ../sass/page.scss */
+/* line 1095, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(1), .product_management_table thead tr th:nth-child(2) {
   width: 20%;
   box-sizing: border-box;
 }
-/* line 1094, ../sass/page.scss */
+/* line 1101, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(1) {
   padding-left: 24px;
 }
-/* line 1097, ../sass/page.scss */
+/* line 1104, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(2) {
   padding-left: 8px;
 }
-/* line 1100, ../sass/page.scss */
+/* line 1107, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(3), .product_management_table thead tr th:nth-child(5), .product_management_table thead tr th:nth-child(7) {
   width: 100px;
 }
-/* line 1105, ../sass/page.scss */
+/* line 1112, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(6) {
   width: 88px;
 }
-/* line 1113, ../sass/page.scss */
+/* line 1120, ../sass/page.scss */
 .product_management_table tbody tr:nth-child(even) {
   background-color: #F3F6FA;
 }
-/* line 1117, ../sass/page.scss */
+/* line 1124, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) {
   padding-left: 24px;
   width: 360px;
   min-width: 360px;
   box-sizing: border-box;
 }
-/* line 1122, ../sass/page.scss */
+/* line 1129, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul {
   padding-top: 16px;
   display: inline-block;
   width: 100%;
   padding-bottom: 16px;
 }
-/* line 1128, ../sass/page.scss */
+/* line 1135, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul + ul {
   border-top: #DBE3EF solid 1px;
 }
-/* line 1131, ../sass/page.scss */
+/* line 1138, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 1136, ../sass/page.scss */
+/* line 1143, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul:first-child {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-/* line 1142, ../sass/page.scss */
+/* line 1149, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(2) {
   padding-left: 8px;
 }
-/* line 1148, ../sass/page.scss */
+/* line 1155, ../sass/page.scss */
 .product_management_table .product_img {
   display: inline-block;
   float: left;
   margin: 8px 0;
 }
-/* line 1152, ../sass/page.scss */
+/* line 1159, ../sass/page.scss */
 .product_management_table .product_img .img {
   display: block;
   border-radius: 5px;
@@ -1460,11 +1481,11 @@
   height: 56px;
   overflow: hidden;
 }
-/* line 1160, ../sass/page.scss */
+/* line 1167, ../sass/page.scss */
 .product_management_table .product_img .img img {
   width: 56px;
 }
-/* line 1165, ../sass/page.scss */
+/* line 1172, ../sass/page.scss */
 .product_management_table .product_name {
   display: inline-block;
   float: left;
@@ -1473,23 +1494,23 @@
   padding-left: 12px;
   padding: 5px 0px 5px 16px;
 }
-/* line 1172, ../sass/page.scss */
+/* line 1179, ../sass/page.scss */
 .product_management_table .product_name span {
   display: block;
   line-height: 24px;
   height: 24px;
 }
-/* line 1179, ../sass/page.scss */
+/* line 1186, ../sass/page.scss */
 .product_management_table .functions {
   position: relative;
 }
-/* line 1183, ../sass/page.scss */
+/* line 1190, ../sass/page.scss */
 .product_management_table .price {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 8px;
 }
-/* line 1187, ../sass/page.scss */
+/* line 1194, ../sass/page.scss */
 .product_management_table .price span {
   border: none !important;
   padding: 0;
@@ -1497,11 +1518,11 @@
   font-weight: lighter;
   padding-right: 4px;
 }
-/* line 1195, ../sass/page.scss */
+/* line 1202, ../sass/page.scss */
 .product_management_table .price_del {
   opacity: 0.6;
 }
-/* line 1198, ../sass/page.scss */
+/* line 1205, ../sass/page.scss */
 .product_management_table .product_quantity {
   font-size: 1.1em;
   font-weight: bold;
@@ -1510,13 +1531,13 @@
   margin-top: 12px;
   padding-right: 16px;
 }
-/* line 1205, ../sass/page.scss */
+/* line 1212, ../sass/page.scss */
 .product_management_table .product_quantity::before {
   content: "x";
   font-weight: lighter;
   opacity: 0.8;
 }
-/* line 1211, ../sass/page.scss */
+/* line 1218, ../sass/page.scss */
 .product_management_table .soldout {
   color: #b71010;
 }
@@ -1524,11 +1545,11 @@
 /*------------------------------------------------------------------
 折扣券
 ------------------------------------------------------------------*/
-/* line 1223, ../sass/page.scss */
+/* line 1230, ../sass/page.scss */
 .info_coupon_table tbody tr td:nth-child(2) {
   padding-left: 0;
 }
-/* line 1228, ../sass/page.scss */
+/* line 1235, ../sass/page.scss */
 .info_coupon_table tbody tr td:nth-child(5) span:nth-child(1) {
   font-size: 0.8em;
   border: #C3D1E4 solid 1px;
@@ -1539,24 +1560,24 @@
   transform: translateY(-1px);
   display: inline-block;
 }
-/* line 1243, ../sass/page.scss */
+/* line 1250, ../sass/page.scss */
 .info_coupon_table tbody tr td:nth-child(6) span:nth-child(1)::after {
   content: "~";
   margin: 0 8px;
 }
 
-/* line 1254, ../sass/page.scss */
+/* line 1261, ../sass/page.scss */
 .label_title {
   position: absolute;
   left: -90px;
   top: 14px;
 }
 
-/* line 1266, ../sass/page.scss */
+/* line 1273, ../sass/page.scss */
 .info_sms_table tbody tr td:nth-child(3), .info_sms_table tbody tr td:nth-child(4) {
   width: 160px;
 }
-/* line 1270, ../sass/page.scss */
+/* line 1277, ../sass/page.scss */
 .info_sms_table tbody tr td:nth-child(5) {
   width: 88px;
 }
@@ -1564,15 +1585,15 @@
 /*------------------------------------------------------------------
 發送電子郵件
 ------------------------------------------------------------------*/
-/* line 1285, ../sass/page.scss */
+/* line 1292, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(2) {
   width: 296px;
 }
-/* line 1288, ../sass/page.scss */
+/* line 1295, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(5), .info_email_table tbody tr td:nth-child(4) {
   width: 160px;
 }
-/* line 1292, ../sass/page.scss */
+/* line 1299, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(6) {
   width: 88px;
 }
