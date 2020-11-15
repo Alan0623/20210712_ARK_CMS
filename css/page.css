@@ -669,7 +669,7 @@
 }
 /* line 441, ../sass/page.scss */
 .abgne_tab div.tab_container .tab_content {
-  padding: 20px;
+  padding: 20px 0;
   padding-bottom: 0;
 }
 /* line 445, ../sass/page.scss */
@@ -1364,77 +1364,94 @@
 .product_management_table {
   background-color: #fff;
   width: 100%;
-  border: #e1eaf6 solid 1px;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+  box-shadow: rgba(147, 164, 189, 0.4) 0 2px 4px, rgba(188, 188, 188, 0.4) 0 2px 4px;
 }
-/* line 1071, ../sass/page.scss */
+/* line 1076, ../sass/page.scss */
 .product_management_table thead {
-  background-color: #e5eefa;
+  background-color: #FFF;
   line-height: 44px;
   height: 44px;
   color: #6F8098;
 }
-/* line 1077, ../sass/page.scss */
+/* line 1081, ../sass/page.scss */
+.product_management_table thead tr {
+  border-bottom: #DBE3EF solid 1px;
+}
+/* line 1083, ../sass/page.scss */
 .product_management_table thead tr th {
   text-align: left;
+  color: #6F8098;
+  height: 69px;
+  line-height: 69px;
 }
-/* line 1079, ../sass/page.scss */
+/* line 1088, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(1), .product_management_table thead tr th:nth-child(2) {
   width: 20%;
   box-sizing: border-box;
 }
-/* line 1085, ../sass/page.scss */
+/* line 1094, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(1) {
   padding-left: 24px;
 }
-/* line 1088, ../sass/page.scss */
+/* line 1097, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(2) {
   padding-left: 8px;
 }
-/* line 1091, ../sass/page.scss */
+/* line 1100, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(3), .product_management_table thead tr th:nth-child(5), .product_management_table thead tr th:nth-child(7) {
   width: 100px;
 }
-/* line 1096, ../sass/page.scss */
+/* line 1105, ../sass/page.scss */
 .product_management_table thead tr th:nth-child(6) {
   width: 88px;
 }
-/* line 1105, ../sass/page.scss */
+/* line 1113, ../sass/page.scss */
+.product_management_table tbody tr:nth-child(even) {
+  background-color: #F3F6FA;
+}
+/* line 1117, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) {
   padding-left: 24px;
   width: 360px;
   min-width: 360px;
   box-sizing: border-box;
 }
-/* line 1110, ../sass/page.scss */
+/* line 1122, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul {
-  border-top: #DBE3EF solid 1px;
   padding-top: 16px;
   display: inline-block;
   width: 100%;
   padding-bottom: 16px;
 }
-/* line 1116, ../sass/page.scss */
+/* line 1128, ../sass/page.scss */
+.product_management_table tbody tr td:nth-child(1) > ul + ul {
+  border-top: #DBE3EF solid 1px;
+}
+/* line 1131, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul::after {
   content: "";
   display: block;
   clear: both;
 }
-/* line 1121, ../sass/page.scss */
+/* line 1136, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(1) > ul:first-child {
   padding-top: 16px;
   padding-bottom: 16px;
 }
-/* line 1127, ../sass/page.scss */
+/* line 1142, ../sass/page.scss */
 .product_management_table tbody tr td:nth-child(2) {
   padding-left: 8px;
 }
-/* line 1133, ../sass/page.scss */
+/* line 1148, ../sass/page.scss */
 .product_management_table .product_img {
   display: inline-block;
   float: left;
   margin: 8px 0;
 }
-/* line 1137, ../sass/page.scss */
+/* line 1152, ../sass/page.scss */
 .product_management_table .product_img .img {
   display: block;
   border-radius: 5px;
@@ -1443,11 +1460,11 @@
   height: 56px;
   overflow: hidden;
 }
-/* line 1145, ../sass/page.scss */
+/* line 1160, ../sass/page.scss */
 .product_management_table .product_img .img img {
   width: 56px;
 }
-/* line 1150, ../sass/page.scss */
+/* line 1165, ../sass/page.scss */
 .product_management_table .product_name {
   display: inline-block;
   float: left;
@@ -1456,23 +1473,23 @@
   padding-left: 12px;
   padding: 5px 0px 5px 16px;
 }
-/* line 1157, ../sass/page.scss */
+/* line 1172, ../sass/page.scss */
 .product_management_table .product_name span {
   display: block;
   line-height: 24px;
   height: 24px;
 }
-/* line 1164, ../sass/page.scss */
+/* line 1179, ../sass/page.scss */
 .product_management_table .functions {
   position: relative;
 }
-/* line 1168, ../sass/page.scss */
+/* line 1183, ../sass/page.scss */
 .product_management_table .price {
   font-size: 1.1em;
   font-weight: bold;
   margin-bottom: 8px;
 }
-/* line 1172, ../sass/page.scss */
+/* line 1187, ../sass/page.scss */
 .product_management_table .price span {
   border: none !important;
   padding: 0;
@@ -1480,11 +1497,11 @@
   font-weight: lighter;
   padding-right: 4px;
 }
-/* line 1180, ../sass/page.scss */
+/* line 1195, ../sass/page.scss */
 .product_management_table .price_del {
   opacity: 0.6;
 }
-/* line 1183, ../sass/page.scss */
+/* line 1198, ../sass/page.scss */
 .product_management_table .product_quantity {
   font-size: 1.1em;
   font-weight: bold;
@@ -1493,21 +1510,25 @@
   margin-top: 12px;
   padding-right: 16px;
 }
-/* line 1190, ../sass/page.scss */
+/* line 1205, ../sass/page.scss */
 .product_management_table .product_quantity::before {
   content: "x";
   font-weight: lighter;
   opacity: 0.8;
 }
+/* line 1211, ../sass/page.scss */
+.product_management_table .soldout {
+  color: #b71010;
+}
 
 /*------------------------------------------------------------------
 折扣券
 ------------------------------------------------------------------*/
-/* line 1205, ../sass/page.scss */
+/* line 1223, ../sass/page.scss */
 .info_coupon_table tbody tr td:nth-child(2) {
   padding-left: 0;
 }
-/* line 1210, ../sass/page.scss */
+/* line 1228, ../sass/page.scss */
 .info_coupon_table tbody tr td:nth-child(5) span:nth-child(1) {
   font-size: 0.8em;
   border: #C3D1E4 solid 1px;
@@ -1518,24 +1539,24 @@
   transform: translateY(-1px);
   display: inline-block;
 }
-/* line 1225, ../sass/page.scss */
+/* line 1243, ../sass/page.scss */
 .info_coupon_table tbody tr td:nth-child(6) span:nth-child(1)::after {
   content: "~";
   margin: 0 8px;
 }
 
-/* line 1236, ../sass/page.scss */
+/* line 1254, ../sass/page.scss */
 .label_title {
   position: absolute;
   left: -90px;
   top: 14px;
 }
 
-/* line 1248, ../sass/page.scss */
+/* line 1266, ../sass/page.scss */
 .info_sms_table tbody tr td:nth-child(3), .info_sms_table tbody tr td:nth-child(4) {
   width: 160px;
 }
-/* line 1252, ../sass/page.scss */
+/* line 1270, ../sass/page.scss */
 .info_sms_table tbody tr td:nth-child(5) {
   width: 88px;
 }
@@ -1543,15 +1564,15 @@
 /*------------------------------------------------------------------
 發送電子郵件
 ------------------------------------------------------------------*/
-/* line 1267, ../sass/page.scss */
+/* line 1285, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(2) {
   width: 296px;
 }
-/* line 1270, ../sass/page.scss */
+/* line 1288, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(5), .info_email_table tbody tr td:nth-child(4) {
   width: 160px;
 }
-/* line 1274, ../sass/page.scss */
+/* line 1292, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(6) {
   width: 88px;
 }
