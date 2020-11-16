@@ -2680,9 +2680,16 @@ placeholder
 /* line 39, ../sass/_base-layout.scss */
 .hide {
   display: none !important;
+  opacity: 0;
 }
 
-/* line 42, ../sass/_base-layout.scss */
+/* line 43, ../sass/_base-layout.scss */
+.show {
+  display: inline-block !important;
+  opacity: 1;
+}
+
+/* line 47, ../sass/_base-layout.scss */
 html, body {
   background-color: #F3F6FA;
   position: relative;
@@ -2690,7 +2697,7 @@ html, body {
   min-width: 1600px;
 }
 
-/* line 48, ../sass/_base-layout.scss */
+/* line 53, ../sass/_base-layout.scss */
 .sr-only {
   /*跳到主要內容區塊*/
   color: #FFF;
@@ -2705,7 +2712,7 @@ html, body {
   white-space: nowrap;
   overflow: hidden;
 }
-/* line 60, ../sass/_base-layout.scss */
+/* line 65, ../sass/_base-layout.scss */
 .sr-only:focus {
   background: #2D343B;
   padding: 8px 10px;
@@ -2713,7 +2720,7 @@ html, body {
   height: auto;
 }
 
-/* line 67, ../sass/_base-layout.scss */
+/* line 72, ../sass/_base-layout.scss */
 #wrapper {
   min-height: 100vh;
   position: relative;
@@ -2722,7 +2729,7 @@ html, body {
 /*------------------------------------------------------------------
 主選單
 ------------------------------------------------------------------*/
-/* line 74, ../sass/_base-layout.scss */
+/* line 79, ../sass/_base-layout.scss */
 #header {
   width: 248px;
   height: 100%;
@@ -2733,7 +2740,7 @@ html, body {
   position: fixed;
   z-index: 1;
 }
-/* line 86, ../sass/_base-layout.scss */
+/* line 91, ../sass/_base-layout.scss */
 #header .header_menu_logo {
   display: flex;
   width: 100%;
@@ -2741,7 +2748,7 @@ html, body {
   justify-content: center;
   align-items: center;
 }
-/* line 92, ../sass/_base-layout.scss */
+/* line 97, ../sass/_base-layout.scss */
 #header .header_menu_logo button,
 #header .header_menu_logo a {
   display: block;
@@ -2752,18 +2759,18 @@ html, body {
   background-size: cover;
   margin: 0 auto;
 }
-/* line 104, ../sass/_base-layout.scss */
+/* line 109, ../sass/_base-layout.scss */
 #header .header_menu_ul {
   width: 100%;
   border-bottom: #E0E5EB solid 1px;
 }
-/* line 108, ../sass/_base-layout.scss */
+/* line 113, ../sass/_base-layout.scss */
 #header .header_menu_ul li {
   width: 100%;
   height: 48px;
   line-height: 48px;
 }
-/* line 112, ../sass/_base-layout.scss */
+/* line 117, ../sass/_base-layout.scss */
 #header .header_menu_ul li button,
 #header .header_menu_ul li a {
   position: relative;
@@ -2780,14 +2787,14 @@ html, body {
   transition: all 0.8s;
   text-align: left;
 }
-/* line 127, ../sass/_base-layout.scss */
+/* line 132, ../sass/_base-layout.scss */
 #header .header_menu_ul li button:hover, #header .header_menu_ul li button:focus,
 #header .header_menu_ul li a:hover,
 #header .header_menu_ul li a:focus {
   color: #93A4BD;
   background-color: rgba(255, 255, 255, 0.8);
 }
-/* line 131, ../sass/_base-layout.scss */
+/* line 136, ../sass/_base-layout.scss */
 #header .header_menu_ul li button::before,
 #header .header_menu_ul li a::before {
   content: "";
@@ -2800,14 +2807,14 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 144, ../sass/_base-layout.scss */
+/* line 149, ../sass/_base-layout.scss */
 #header .header_menu_ul li.is-active {
   background-image: url("../images/bg_li.png");
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
-/* line 149, ../sass/_base-layout.scss */
+/* line 154, ../sass/_base-layout.scss */
 #header .header_menu_ul li.is-active::before {
   content: "";
   position: absolute;
@@ -2820,52 +2827,52 @@ html, body {
   background-size: cover;
 }
 
-/* line 164, ../sass/_base-layout.scss */
+/* line 169, ../sass/_base-layout.scss */
 .announcement::before {
   background-image: url("../images/icon/announcement.png");
 }
 
-/* line 165, ../sass/_base-layout.scss */
+/* line 170, ../sass/_base-layout.scss */
 .order_management::before {
   background-image: url("../images/icon/order_management.png");
 }
 
-/* line 166, ../sass/_base-layout.scss */
+/* line 171, ../sass/_base-layout.scss */
 .info_customer::before {
   background-image: url("../images/icon/info_customer.png");
 }
 
-/* line 167, ../sass/_base-layout.scss */
+/* line 172, ../sass/_base-layout.scss */
 .product_management::before {
   background-image: url("../images/icon/product_management.png");
 }
 
-/* line 168, ../sass/_base-layout.scss */
+/* line 173, ../sass/_base-layout.scss */
 .send_sms::before {
   background-image: url("../images/icon/send_sms.png");
 }
 
-/* line 169, ../sass/_base-layout.scss */
+/* line 174, ../sass/_base-layout.scss */
 .send_email::before {
   background-image: url("../images/icon/send_email.png");
 }
 
-/* line 170, ../sass/_base-layout.scss */
+/* line 175, ../sass/_base-layout.scss */
 .coupon::before {
   background-image: url("../images/icon/coupon.png");
 }
 
-/* line 171, ../sass/_base-layout.scss */
+/* line 176, ../sass/_base-layout.scss */
 .info_staff::before {
   background-image: url("../images/icon/info_staff.png");
 }
 
-/* line 172, ../sass/_base-layout.scss */
+/* line 177, ../sass/_base-layout.scss */
 .info_dealer::before {
   background-image: url("../images/icon/info_dealer.png");
 }
 
-/* line 173, ../sass/_base-layout.scss */
+/* line 178, ../sass/_base-layout.scss */
 .info_partner::before {
   background-image: url("../images/icon/info_partner.png");
 }
@@ -2873,7 +2880,7 @@ html, body {
 /*-----------------------------------------------------------------
 內容區塊
 ------------------------------------------------------------------*/
-/* line 177, ../sass/_base-layout.scss */
+/* line 182, ../sass/_base-layout.scss */
 #main {
   width: 100%;
   height: 100%;
@@ -2883,12 +2890,12 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 186, ../sass/_base-layout.scss */
+/* line 191, ../sass/_base-layout.scss */
 .main_header {
   position: relative;
   border-bottom: #DBE3EF solid 1px;
 }
-/* line 190, ../sass/_base-layout.scss */
+/* line 195, ../sass/_base-layout.scss */
 .main_header .bread_crumbs {
   float: left;
   height: 64px;
@@ -2896,11 +2903,11 @@ html, body {
   display: flex;
   font-size: 0.9em;
 }
-/* line 197, ../sass/_base-layout.scss */
+/* line 202, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul {
   margin-left: 32px;
 }
-/* line 199, ../sass/_base-layout.scss */
+/* line 204, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul li {
   color: #6F8098;
   float: left;
@@ -2908,7 +2915,7 @@ html, body {
   padding-left: 32px;
   margin-right: 16px;
 }
-/* line 205, ../sass/_base-layout.scss */
+/* line 210, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul li::before {
   content: "";
   position: absolute;
@@ -2920,23 +2927,23 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 216, ../sass/_base-layout.scss */
+/* line 221, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul li button,
 .main_header .bread_crumbs ul li a {
   color: #6F8098;
 }
-/* line 220, ../sass/_base-layout.scss */
+/* line 225, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul li button:hover, .main_header .bread_crumbs ul li button:focus,
 .main_header .bread_crumbs ul li a:hover,
 .main_header .bread_crumbs ul li a:focus {
   text-decoration: underline;
   color: #2D343B;
 }
-/* line 226, ../sass/_base-layout.scss */
+/* line 231, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul li:nth-child(1) {
   padding-left: 26px;
 }
-/* line 228, ../sass/_base-layout.scss */
+/* line 233, ../sass/_base-layout.scss */
 .main_header .bread_crumbs ul li:nth-child(1)::before {
   content: "";
   position: absolute;
@@ -2949,32 +2956,32 @@ html, body {
   background-size: cover;
   opacity: 0.7;
 }
-/* line 244, ../sass/_base-layout.scss */
+/* line 249, ../sass/_base-layout.scss */
 .main_header .personal {
   float: right;
   margin-top: 12px;
   margin-right: 32px;
   position: relative;
 }
-/* line 249, ../sass/_base-layout.scss */
+/* line 254, ../sass/_base-layout.scss */
 .main_header .personal button,
 .main_header .personal a {
   display: flex;
   align-items: center;
 }
-/* line 254, ../sass/_base-layout.scss */
+/* line 259, ../sass/_base-layout.scss */
 .main_header .personal button:hover .personal_name, .main_header .personal button:focus .personal_name,
 .main_header .personal a:hover .personal_name,
 .main_header .personal a:focus .personal_name {
   color: #2D343B;
 }
-/* line 256, ../sass/_base-layout.scss */
+/* line 261, ../sass/_base-layout.scss */
 .main_header .personal button:hover .personal_name::after, .main_header .personal button:focus .personal_name::after,
 .main_header .personal a:hover .personal_name::after,
 .main_header .personal a:focus .personal_name::after {
   opacity: 1;
 }
-/* line 263, ../sass/_base-layout.scss */
+/* line 268, ../sass/_base-layout.scss */
 .main_header .personal .personal_img {
   width: 40px;
   height: 40px;
@@ -2983,19 +2990,19 @@ html, body {
   float: left;
   margin-right: 8px;
 }
-/* line 270, ../sass/_base-layout.scss */
+/* line 275, ../sass/_base-layout.scss */
 .main_header .personal .personal_img img {
   width: 40px;
   height: 40px;
 }
-/* line 275, ../sass/_base-layout.scss */
+/* line 280, ../sass/_base-layout.scss */
 .main_header .personal .personal_name {
   color: #6F8098;
   float: left;
   position: relative;
   padding-right: 32px;
 }
-/* line 280, ../sass/_base-layout.scss */
+/* line 285, ../sass/_base-layout.scss */
 .main_header .personal .personal_name::after {
   content: "";
   position: absolute;
@@ -3008,13 +3015,13 @@ html, body {
   background-repeat: no-repeat;
   opacity: 0.3;
 }
-/* line 293, ../sass/_base-layout.scss */
+/* line 298, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions {
   position: absolute;
   z-index: 3;
   display: none;
 }
-/* line 297, ../sass/_base-layout.scss */
+/* line 302, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions ul {
   border-radius: 5px;
   overflow: hidden;
@@ -3022,22 +3029,22 @@ html, body {
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px;
   display: inline-block;
 }
-/* line 303, ../sass/_base-layout.scss */
+/* line 308, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions ul li {
   border-left: #F3F6FA solid 1px;
   border-right: #F3F6FA solid 1px;
   width: 100%;
   display: inline-block;
 }
-/* line 309, ../sass/_base-layout.scss */
+/* line 314, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions ul li:nth-child(1) a {
   border-radius: 5px 5px 0 0;
 }
-/* line 314, ../sass/_base-layout.scss */
+/* line 319, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions ul li:nth-last-child(1) a {
   border-radius: 0 0 5px 5px;
 }
-/* line 318, ../sass/_base-layout.scss */
+/* line 323, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions ul li button,
 .main_header .personal .personal_functions ul li a {
   padding: 13px 10px;
@@ -3049,7 +3056,7 @@ html, body {
   width: 100%;
   box-sizing: border-box;
 }
-/* line 328, ../sass/_base-layout.scss */
+/* line 333, ../sass/_base-layout.scss */
 .main_header .personal .personal_functions ul li button:hover, .main_header .personal .personal_functions ul li button:focus,
 .main_header .personal .personal_functions ul li a:hover,
 .main_header .personal .personal_functions ul li a:focus {
@@ -3058,31 +3065,31 @@ html, body {
   color: black;
 }
 
-/* line 339, ../sass/_base-layout.scss */
+/* line 344, ../sass/_base-layout.scss */
 .main_content {
   position: relative;
   padding: 32px;
   box-sizing: border-box;
   padding-bottom: 0;
 }
-/* line 344, ../sass/_base-layout.scss */
+/* line 349, ../sass/_base-layout.scss */
 .main_content .main_content_search {
   height: 44px;
   line-height: 44px;
   color: #b71010;
 }
-/* line 349, ../sass/_base-layout.scss */
+/* line 354, ../sass/_base-layout.scss */
 .main_content .main_content_title {
   position: relative;
   height: 44px;
   padding-top: 16px;
   margin-bottom: 20px;
 }
-/* line 355, ../sass/_base-layout.scss */
+/* line 360, ../sass/_base-layout.scss */
 .main_content .main_content_title.big {
   padding-bottom: 56px;
 }
-/* line 359, ../sass/_base-layout.scss */
+/* line 364, ../sass/_base-layout.scss */
 .main_content h2 {
   display: inline-block;
   position: relative;
@@ -3096,7 +3103,7 @@ html, body {
   position: relative;
   padding-left: 44px;
 }
-/* line 371, ../sass/_base-layout.scss */
+/* line 376, ../sass/_base-layout.scss */
 .main_content h2::before {
   content: "";
   width: 28px;
@@ -3107,48 +3114,48 @@ html, body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 382, ../sass/_base-layout.scss */
+/* line 387, ../sass/_base-layout.scss */
 .main_content h2.announcement::before {
   background-image: url("../images/icon/announcement_b.png");
 }
-/* line 383, ../sass/_base-layout.scss */
+/* line 388, ../sass/_base-layout.scss */
 .main_content h2.order_management::before {
   background-image: url("../images/icon/order_management_b.png");
 }
-/* line 384, ../sass/_base-layout.scss */
+/* line 389, ../sass/_base-layout.scss */
 .main_content h2.info_customer::before {
   background-image: url("../images/icon/info_customer_b.png");
 }
-/* line 385, ../sass/_base-layout.scss */
+/* line 390, ../sass/_base-layout.scss */
 .main_content h2.product_management::before {
   background-image: url("../images/icon/product_management_b.png");
 }
-/* line 386, ../sass/_base-layout.scss */
+/* line 391, ../sass/_base-layout.scss */
 .main_content h2.send_sms::before {
   background-image: url("../images/icon/send_sms_b.png");
 }
-/* line 387, ../sass/_base-layout.scss */
+/* line 392, ../sass/_base-layout.scss */
 .main_content h2.send_email::before {
   background-image: url("../images/icon/send_email_b.png");
 }
-/* line 388, ../sass/_base-layout.scss */
+/* line 393, ../sass/_base-layout.scss */
 .main_content h2.coupon::before {
   background-image: url("../images/icon/coupon_b.png");
 }
-/* line 389, ../sass/_base-layout.scss */
+/* line 394, ../sass/_base-layout.scss */
 .main_content h2.info_staff::before {
   background-image: url("../images/icon/info_staff_b.png");
 }
-/* line 390, ../sass/_base-layout.scss */
+/* line 395, ../sass/_base-layout.scss */
 .main_content h2.info_dealer::before {
   background-image: url("../images/icon/info_dealer_b.png");
 }
-/* line 391, ../sass/_base-layout.scss */
+/* line 396, ../sass/_base-layout.scss */
 .main_content h2.info_partner::before {
   background-image: url("../images/icon/info_partner_b.png");
 }
 
-/* line 396, ../sass/_base-layout.scss */
+/* line 401, ../sass/_base-layout.scss */
 input[type="tel"],
 input[type="email"],
 input[type="password"],
@@ -3162,7 +3169,7 @@ input[type="text"] {
   border: #DBE3EF solid 1px;
   outline-color: #C3D1E4;
 }
-/* line 408, ../sass/_base-layout.scss */
+/* line 413, ../sass/_base-layout.scss */
 input[type="tel"]:hover, input[type="tel"]:focus,
 input[type="email"]:hover,
 input[type="email"]:focus,
@@ -3173,36 +3180,36 @@ input[type="text"]:focus {
   border: #DBE3EF solid 1px;
 }
 
-/* line 412, ../sass/_base-layout.scss */
+/* line 417, ../sass/_base-layout.scss */
 input[type="checkbox"] {
   box-sizing: border-box;
   border: none !important;
   outline-color: #C3D1E4;
   margin: 0;
 }
-/* line 420, ../sass/_base-layout.scss */
+/* line 425, ../sass/_base-layout.scss */
 input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   border: #DBE3EF solid 1px;
 }
 
-/* line 424, ../sass/_base-layout.scss */
+/* line 429, ../sass/_base-layout.scss */
 .main_content_title_input {
   position: absolute;
   right: 0;
   bottom: 8px;
   z-index: 1;
 }
-/* line 429, ../sass/_base-layout.scss */
+/* line 434, ../sass/_base-layout.scss */
 .main_content_title_input ul {
   float: right;
 }
-/* line 431, ../sass/_base-layout.scss */
+/* line 436, ../sass/_base-layout.scss */
 .main_content_title_input ul li {
   position: relative;
   float: left;
   margin-left: 16px;
 }
-/* line 435, ../sass/_base-layout.scss */
+/* line 440, ../sass/_base-layout.scss */
 .main_content_title_input ul li::before {
   content: "";
   display: block;
@@ -3214,7 +3221,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 446, ../sass/_base-layout.scss */
+/* line 451, ../sass/_base-layout.scss */
 .main_content_title_input ul li::after {
   content: "";
   display: block;
@@ -3226,7 +3233,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   z-index: 2;
   top: 0;
 }
-/* line 457, ../sass/_base-layout.scss */
+/* line 462, ../sass/_base-layout.scss */
 .main_content_title_input ul li input[type="tel"],
 .main_content_title_input ul li input[type="email"],
 .main_content_title_input ul li input[type="password"],
@@ -3241,7 +3248,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   border: #DBE3EF solid 1px;
   outline-color: #C3D1E4;
 }
-/* line 470, ../sass/_base-layout.scss */
+/* line 475, ../sass/_base-layout.scss */
 .main_content_title_input ul li input[type="tel"]:hover, .main_content_title_input ul li input[type="tel"]:focus,
 .main_content_title_input ul li input[type="email"]:hover,
 .main_content_title_input ul li input[type="email"]:focus,
@@ -3251,7 +3258,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
 .main_content_title_input ul li input[type="text"]:focus {
   border: #DBE3EF solid 1px;
 }
-/* line 475, ../sass/_base-layout.scss */
+/* line 480, ../sass/_base-layout.scss */
 .main_content_title_input ul li input[type="submit"] {
   width: 44px;
   height: 44px;
@@ -3267,22 +3274,22 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   outline-color: transparent;
   background-size: 50%;
 }
-/* line 490, ../sass/_base-layout.scss */
+/* line 495, ../sass/_base-layout.scss */
 .main_content_title_input ul li input[type="submit"]:hover, .main_content_title_input ul li input[type="submit"]:focus {
   background-image: url("../images/icon/search_b.svg");
 }
-/* line 494, ../sass/_base-layout.scss */
+/* line 499, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-add {
   position: absolute;
   top: -56px;
   right: 0;
   z-index: 1;
 }
-/* line 499, ../sass/_base-layout.scss */
+/* line 504, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-add::after {
   display: none !important;
 }
-/* line 502, ../sass/_base-layout.scss */
+/* line 507, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-add button,
 .main_content_title_input ul li.input-add a {
   background-image: url("../images/bg_pink.jpg");
@@ -3301,7 +3308,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   opacity: 0.7;
   box-shadow: rgba(147, 164, 189, 0.4) 0 2px 4px, rgba(188, 188, 188, 0.4) 0 2px 4px;
 }
-/* line 521, ../sass/_base-layout.scss */
+/* line 526, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-add button::before,
 .main_content_title_input ul li.input-add a::before {
   content: "+";
@@ -3309,7 +3316,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   font-size: 1.2em;
   margin-right: 8px;
 }
-/* line 528, ../sass/_base-layout.scss */
+/* line 533, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-add button:hover, .main_content_title_input ul li.input-add button:focus,
 .main_content_title_input ul li.input-add a:hover,
 .main_content_title_input ul li.input-add a:focus {
@@ -3318,49 +3325,49 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   color: #2D343B;
   opacity: 0.9;
 }
-/* line 533, ../sass/_base-layout.scss */
+/* line 538, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-add button:hover::before, .main_content_title_input ul li.input-add button:focus::before,
 .main_content_title_input ul li.input-add a:hover::before,
 .main_content_title_input ul li.input-add a:focus::before {
   color: #2D343B;
 }
-/* line 540, ../sass/_base-layout.scss */
+/* line 545, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-customer::before {
   background-image: url("../images/icon/name.png");
 }
-/* line 545, ../sass/_base-layout.scss */
+/* line 550, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-email::before {
   background-image: url("../images/icon/mali.png");
 }
-/* line 550, ../sass/_base-layout.scss */
+/* line 555, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-phone::before {
   background-image: url("../images/icon/phone.png");
 }
-/* line 555, ../sass/_base-layout.scss */
+/* line 560, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-orderNo::before {
   background-image: url("../images/icon/order_management.png");
 }
-/* line 561, ../sass/_base-layout.scss */
+/* line 566, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-account::before {
   background-image: url("../images/icon/name.png");
 }
-/* line 566, ../sass/_base-layout.scss */
+/* line 571, ../sass/_base-layout.scss */
 .main_content_title_input ul li.input-password::before {
   background-image: url("../images/icon/password.png");
 }
 
-/* line 577, ../sass/_base-layout.scss */
+/* line 582, ../sass/_base-layout.scss */
 .input-date {
   border: #DBE3EF solid 1px;
   border-radius: 8px;
   background-color: #FFF;
   margin-right: 0px;
 }
-/* line 582, ../sass/_base-layout.scss */
+/* line 587, ../sass/_base-layout.scss */
 .input-date #to {
   padding-left: 16px;
 }
-/* line 586, ../sass/_base-layout.scss */
+/* line 591, ../sass/_base-layout.scss */
 .input-date::before {
   content: "";
   display: block;
@@ -3373,7 +3380,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-size: cover;
   background-image: url("../images/icon/calendar.png");
 }
-/* line 598, ../sass/_base-layout.scss */
+/* line 603, ../sass/_base-layout.scss */
 .input-date input[type="tel"],
 .input-date input[type="email"],
 .input-date input[type="password"],
@@ -3382,7 +3389,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   border: none !important;
 }
 
-/* line 608, ../sass/_base-layout.scss */
+/* line 613, ../sass/_base-layout.scss */
 .input-product::before {
   content: "";
   display: block;
@@ -3396,7 +3403,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-image: url("../images/icon/product_management.png");
 }
 
-/* line 621, ../sass/_base-layout.scss */
+/* line 626, ../sass/_base-layout.scss */
 .ui-datepicker td span, .ui-datepicker td a {
   text-align: center !important;
   padding: 10px 0.2em !important;
@@ -3404,7 +3411,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   border: none !important;
 }
 
-/* line 627, ../sass/_base-layout.scss */
+/* line 632, ../sass/_base-layout.scss */
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
   background: url("../images/bg_pink.jpg") !important;
   background-position: center center;
@@ -3412,45 +3419,45 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-size: cover;
 }
 
-/* line 633, ../sass/_base-layout.scss */
+/* line 638, ../sass/_base-layout.scss */
 #ui-datepicker-div {
   box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 6px;
   border: 1px solid #fff !important;
   border-radius: 5px !important;
 }
 
-/* line 638, ../sass/_base-layout.scss */
+/* line 643, ../sass/_base-layout.scss */
 .ui-widget-header {
   background-color: #fff !important;
   border-bottom: #DBE3EF solid 1px !important;
 }
 
-/* line 642, ../sass/_base-layout.scss */
+/* line 647, ../sass/_base-layout.scss */
 .ui-datepicker .ui-datepicker-prev span,
 .ui-datepicker .ui-datepicker-next span {
   background-size: contain !important;
   background-repeat: no-repeat !important;
 }
 
-/* line 647, ../sass/_base-layout.scss */
+/* line 652, ../sass/_base-layout.scss */
 .ui-datepicker .ui-datepicker-prev span {
   background: url("../images/arrow-lefts.png") !important;
 }
 
-/* line 650, ../sass/_base-layout.scss */
+/* line 655, ../sass/_base-layout.scss */
 .ui-datepicker .ui-datepicker-next span {
   background: url("../images/arrow-rights.png") !important;
 }
 
-/* line 655, ../sass/_base-layout.scss */
+/* line 660, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th {
   height: 20px;
 }
-/* line 658, ../sass/_base-layout.scss */
+/* line 663, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th span {
   position: relative;
 }
-/* line 661, ../sass/_base-layout.scss */
+/* line 666, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th span::before {
   position: absolute;
   width: 100%;
@@ -3461,41 +3468,71 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   line-height: 20px;
   color: #2D343B;
 }
-/* line 672, ../sass/_base-layout.scss */
+/* line 677, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(1) span::before {
   content: "日";
   color: #b71010;
 }
-/* line 678, ../sass/_base-layout.scss */
+/* line 683, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(2) span::before {
   content: "一";
 }
-/* line 683, ../sass/_base-layout.scss */
+/* line 688, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(3) span::before {
   content: "二";
 }
-/* line 688, ../sass/_base-layout.scss */
+/* line 693, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(4) span::before {
   content: "三";
 }
-/* line 693, ../sass/_base-layout.scss */
+/* line 698, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(5) span::before {
   content: "四";
 }
-/* line 698, ../sass/_base-layout.scss */
+/* line 703, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(6) span::before {
   content: "五";
 }
-/* line 703, ../sass/_base-layout.scss */
+/* line 708, ../sass/_base-layout.scss */
 .ui-datepicker-calendar tr th:nth-child(7) span::before {
   content: "六";
   color: #b71010;
 }
 
+/* line 716, ../sass/_base-layout.scss */
+.error {
+  position: absolute;
+  left: 0;
+  text-align: left;
+  top: 44px;
+  font-size: 0.8em;
+  background-color: #FFF;
+  border-radius: 50px;
+  z-index: 2;
+  box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 2px;
+  display: inline-block;
+  padding: 8px 16px;
+  color: #b71010;
+  padding-left: 28px;
+}
+/* line 730, ../sass/_base-layout.scss */
+.error::before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 11px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #b71010 transparent;
+}
+
 /*------------------------------------------------------------------
 操作功能
 ------------------------------------------------------------------*/
-/* line 714, ../sass/_base-layout.scss */
+/* line 746, ../sass/_base-layout.scss */
 .functions {
   position: absolute;
   z-index: 2;
@@ -3503,13 +3540,13 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   top: 20px;
   left: -4px;
 }
-/* line 721, ../sass/_base-layout.scss */
+/* line 753, ../sass/_base-layout.scss */
 .functions li {
   display: inline-block;
   float: left;
   margin: 0 4px;
 }
-/* line 726, ../sass/_base-layout.scss */
+/* line 758, ../sass/_base-layout.scss */
 .functions .btn {
   display: block;
   width: 32px;
@@ -3519,67 +3556,67 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-color: transparent;
   border: none;
 }
-/* line 736, ../sass/_base-layout.scss */
+/* line 768, ../sass/_base-layout.scss */
 .functions .order_record {
   background-image: url("../images/icon/box.png");
 }
-/* line 738, ../sass/_base-layout.scss */
+/* line 770, ../sass/_base-layout.scss */
 .functions .order_record:hover, .functions .order_record:focus {
   background-image: url("../images/icon/box_b.png");
 }
-/* line 742, ../sass/_base-layout.scss */
+/* line 774, ../sass/_base-layout.scss */
 .functions .edit {
   background-image: url("../images/icon/pen.png");
 }
-/* line 744, ../sass/_base-layout.scss */
+/* line 776, ../sass/_base-layout.scss */
 .functions .edit:hover, .functions .edit:focus {
   background-image: url("../images/icon/pen_b.png");
 }
-/* line 748, ../sass/_base-layout.scss */
+/* line 780, ../sass/_base-layout.scss */
 .functions .delete {
   background-image: url("../images/icon/del.png");
 }
-/* line 750, ../sass/_base-layout.scss */
+/* line 782, ../sass/_base-layout.scss */
 .functions .delete:hover, .functions .delete:focus {
   background-image: url("../images/icon/del_b.png");
 }
-/* line 754, ../sass/_base-layout.scss */
+/* line 786, ../sass/_base-layout.scss */
 .functions .open {
   background-image: url("../images/icon/open.png");
 }
-/* line 756, ../sass/_base-layout.scss */
+/* line 788, ../sass/_base-layout.scss */
 .functions .open:hover, .functions .open:focus {
   background-image: url("../images/icon/open_b.png");
 }
-/* line 760, ../sass/_base-layout.scss */
+/* line 792, ../sass/_base-layout.scss */
 .functions .close {
   background-image: url("../images/icon/close.png");
 }
-/* line 762, ../sass/_base-layout.scss */
+/* line 794, ../sass/_base-layout.scss */
 .functions .close:hover, .functions .close:focus {
   background-image: url("../images/icon/close_b.png");
 }
-/* line 766, ../sass/_base-layout.scss */
+/* line 798, ../sass/_base-layout.scss */
 .functions .send {
   background-image: url("../images/icon/send.png");
 }
-/* line 768, ../sass/_base-layout.scss */
+/* line 800, ../sass/_base-layout.scss */
 .functions .send:hover, .functions .send:focus {
   background-image: url("../images/icon/send_b.png");
 }
-/* line 772, ../sass/_base-layout.scss */
+/* line 804, ../sass/_base-layout.scss */
 .functions .down {
   background-image: url("../images/icon/pdown.png");
 }
-/* line 774, ../sass/_base-layout.scss */
+/* line 806, ../sass/_base-layout.scss */
 .functions .down:hover, .functions .down:focus {
   background-image: url("../images/icon/pdown_b.png");
 }
-/* line 778, ../sass/_base-layout.scss */
+/* line 810, ../sass/_base-layout.scss */
 .functions .up {
   background-image: url("../images/icon/up.png");
 }
-/* line 780, ../sass/_base-layout.scss */
+/* line 812, ../sass/_base-layout.scss */
 .functions .up:hover, .functions .up:focus {
   background-image: url("../images/icon/up_b.png");
 }
@@ -3587,18 +3624,18 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
 /*------------------------------------------------------------------
 頁碼
 ------------------------------------------------------------------*/
-/* line 788, ../sass/_base-layout.scss */
+/* line 820, ../sass/_base-layout.scss */
 .main_content_pageno {
   text-align: center;
   padding: 32px 0;
 }
-/* line 791, ../sass/_base-layout.scss */
+/* line 823, ../sass/_base-layout.scss */
 .main_content_pageno ul {
   height: 48px;
   display: inline-block;
   margin: 0 8px;
 }
-/* line 796, ../sass/_base-layout.scss */
+/* line 828, ../sass/_base-layout.scss */
 .main_content_pageno ul li {
   height: 48px;
   width: 48px;
@@ -3608,15 +3645,15 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   float: left;
   margin-left: -1px;
 }
-/* line 804, ../sass/_base-layout.scss */
+/* line 836, ../sass/_base-layout.scss */
 .main_content_pageno ul li:nth-child(1) button, .main_content_pageno ul li:nth-child(1) a {
   border-radius: 8px 0 0 8px;
 }
-/* line 808, ../sass/_base-layout.scss */
+/* line 840, ../sass/_base-layout.scss */
 .main_content_pageno ul li:nth-last-child(1) button, .main_content_pageno ul li:nth-last-child(1) a {
   border-radius: 0 8px 8px 0;
 }
-/* line 812, ../sass/_base-layout.scss */
+/* line 844, ../sass/_base-layout.scss */
 .main_content_pageno ul li button,
 .main_content_pageno ul li a {
   display: block;
@@ -3630,20 +3667,20 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   line-height: 48px;
   background-color: #fff;
 }
-/* line 824, ../sass/_base-layout.scss */
+/* line 856, ../sass/_base-layout.scss */
 .main_content_pageno ul li button:hover, .main_content_pageno ul li button:focus,
 .main_content_pageno ul li a:hover,
 .main_content_pageno ul li a:focus {
   color: #2D343B;
   background-color: #F3F6FA;
 }
-/* line 830, ../sass/_base-layout.scss */
+/* line 862, ../sass/_base-layout.scss */
 .main_content_pageno ul li.is-active button,
 .main_content_pageno ul li.is-active a {
   color: #2D343B;
   background-color: #F3F6FA;
 }
-/* line 838, ../sass/_base-layout.scss */
+/* line 870, ../sass/_base-layout.scss */
 .main_content_pageno ul li.next button,
 .main_content_pageno ul li.next a, .main_content_pageno ul li.prev button,
 .main_content_pageno ul li.prev a {
@@ -3651,7 +3688,7 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   align-items: center;
   justify-content: center;
 }
-/* line 844, ../sass/_base-layout.scss */
+/* line 876, ../sass/_base-layout.scss */
 .main_content_pageno ul li.next button::after,
 .main_content_pageno ul li.next a::after, .main_content_pageno ul li.prev button::after,
 .main_content_pageno ul li.prev a::after {
@@ -3662,38 +3699,38 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-repeat: no-repeat;
   background-size: cover;
 }
-/* line 856, ../sass/_base-layout.scss */
+/* line 888, ../sass/_base-layout.scss */
 .main_content_pageno ul li.next button::after, .main_content_pageno ul li.next a::after {
   background-image: url("../images/arrow-right.png");
 }
-/* line 860, ../sass/_base-layout.scss */
+/* line 892, ../sass/_base-layout.scss */
 .main_content_pageno ul li.next button:hover::after, .main_content_pageno ul li.next button:focus::after, .main_content_pageno ul li.next a:hover::after, .main_content_pageno ul li.next a:focus::after {
   background-image: url("../images/arrow-right_o.png");
 }
-/* line 867, ../sass/_base-layout.scss */
+/* line 899, ../sass/_base-layout.scss */
 .main_content_pageno ul li.prev button::after, .main_content_pageno ul li.prev a::after {
   background-image: url("../images/arrow-left.png");
 }
-/* line 871, ../sass/_base-layout.scss */
+/* line 903, ../sass/_base-layout.scss */
 .main_content_pageno ul li.prev button:hover::after, .main_content_pageno ul li.prev button:focus::after, .main_content_pageno ul li.prev a:hover::after, .main_content_pageno ul li.prev a:focus::after {
   background-image: url("../images/arrow-left_o.png");
 }
-/* line 880, ../sass/_base-layout.scss */
+/* line 912, ../sass/_base-layout.scss */
 .main_content_pageno ul:nth-last-child(1) li button,
 .main_content_pageno ul:nth-last-child(1) li a {
   border-radius: 8px;
 }
 
-/* line 890, ../sass/_base-layout.scss */
+/* line 922, ../sass/_base-layout.scss */
 .input-send {
   margin-top: 40px;
 }
-/* line 892, ../sass/_base-layout.scss */
+/* line 924, ../sass/_base-layout.scss */
 .input-send::before, .input-send::after {
   display: none;
   opacity: 0;
 }
-/* line 897, ../sass/_base-layout.scss */
+/* line 929, ../sass/_base-layout.scss */
 .input-send button,
 .input-send a {
   width: 148px;
@@ -3711,13 +3748,13 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   letter-spacing: 2px;
   cursor: pointer;
 }
-/* line 915, ../sass/_base-layout.scss */
+/* line 947, ../sass/_base-layout.scss */
 .input-send button.cancel, .input-send button.forget,
 .input-send a.cancel,
 .input-send a.forget {
   opacity: 0.6;
 }
-/* line 918, ../sass/_base-layout.scss */
+/* line 950, ../sass/_base-layout.scss */
 .input-send button.cancel:hover, .input-send button.cancel:focus, .input-send button.forget:hover, .input-send button.forget:focus,
 .input-send a.cancel:hover,
 .input-send a.cancel:focus,
@@ -3726,13 +3763,13 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   opacity: 1;
   color: #2D343B;
 }
-/* line 925, ../sass/_base-layout.scss */
+/* line 957, ../sass/_base-layout.scss */
 .input-send button.confirm span, .input-send button.login span,
 .input-send a.confirm span,
 .input-send a.login span {
   margin-right: -4px;
 }
-/* line 928, ../sass/_base-layout.scss */
+/* line 960, ../sass/_base-layout.scss */
 .input-send button.confirm:hover, .input-send button.confirm:focus, .input-send button.login:hover, .input-send button.login:focus,
 .input-send a.confirm:hover,
 .input-send a.confirm:focus,
@@ -3741,12 +3778,12 @@ input[type="checkbox"]:hover, input[type="checkbox"]:focus {
   background-color: #2D343B;
   color: #ffffff;
 }
-/* line 933, ../sass/_base-layout.scss */
+/* line 965, ../sass/_base-layout.scss */
 .input-send button:nth-child(1),
 .input-send a:nth-child(1) {
   float: left;
 }
-/* line 937, ../sass/_base-layout.scss */
+/* line 969, ../sass/_base-layout.scss */
 .input-send button:nth-last-child(1),
 .input-send a:nth-last-child(1) {
   float: right;
