@@ -1573,11 +1573,30 @@
   top: 14px;
 }
 
-/* line 1274, ../sass/page.scss */
+/* line 1268, ../sass/page.scss */
+.info_coupon_content_add_table {
+  width: 50%;
+  float: left;
+}
+/* line 1273, ../sass/page.scss */
+.info_coupon_content_add_table thead tr th {
+  padding-left: 32px !important;
+  box-sizing: border-box;
+}
+/* line 1281, ../sass/page.scss */
+.info_coupon_content_add_table tbody tr td {
+  text-align: left !important;
+  padding-left: 32px !important;
+}
+
+/*------------------------------------------------------------------
+發送SMS
+------------------------------------------------------------------*/
+/* line 1299, ../sass/page.scss */
 .info_sms_table tbody tr td:nth-child(3), .info_sms_table tbody tr td:nth-child(4) {
   width: 160px;
 }
-/* line 1278, ../sass/page.scss */
+/* line 1303, ../sass/page.scss */
 .info_sms_table tbody tr td:nth-child(5) {
   width: 88px;
 }
@@ -1585,15 +1604,15 @@
 /*------------------------------------------------------------------
 發送電子郵件
 ------------------------------------------------------------------*/
-/* line 1293, ../sass/page.scss */
+/* line 1318, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(2) {
   width: 296px;
 }
-/* line 1296, ../sass/page.scss */
+/* line 1321, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(5), .info_email_table tbody tr td:nth-child(4) {
   width: 160px;
 }
-/* line 1300, ../sass/page.scss */
+/* line 1325, ../sass/page.scss */
 .info_email_table tbody tr td:nth-child(6) {
   width: 88px;
 }
